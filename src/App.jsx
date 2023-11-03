@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import Button from './components/Button'
+import Paragraph from './components/Paragraph'
 
 function App() {
 
@@ -9,14 +11,15 @@ function App() {
     setCount((count) => count + 1)
   }
 
+  const decreaseCount = () => {
+    setCount((count) => count - 1)
+  }
+
   return (
     <>
-      <button onClick={() => increaseCount()}>
-        click me
-      </button>
-      <p>
-        count: {count}
-      </p>
+      <Button func={increaseCount} text={'increase'} />
+      <Paragraph counter={count} />
+      <Button func={decreaseCount} text={'decrease'} />
     </>
   )
 }
