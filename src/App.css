@@ -40,3 +40,23 @@
 .read-the-docs {
   color: #888;
 }
+
+.navbar {
+  width: 200px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  color: black;
+  border: solid red 1px;
+  border-radius: 5px;
+  padding: 5px;
+  transition: all 0.15s;
+}
+
+.link:hover {
+  background-color: rgb(244, 59, 59);
+  color: white;
+}

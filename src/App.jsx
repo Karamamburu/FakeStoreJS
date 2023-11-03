@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Button from './components/Button'
 import Paragraph from './components/Paragraph'
+import Navbar from './components/Navbar'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <Button func={increaseCount} text={'increase'} />
       <Paragraph counter={count} />
       <Button func={decreaseCount} text={'decrease'} />
